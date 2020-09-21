@@ -1,0 +1,28 @@
+#logo {
+    color: #d3d3d3;
+    font-size: 18px;
+    margin-top: 0.5em;
+  }
+  #logo:hover{
+      color:white
+  }
+  
+   nav{
+      display: flex;
+      justify-content: center;
+      line-height: 2.8em;
+  }
+  
+  nav div{
+      cursor: pointer;
+      text-decoration: none;
+      color: #d3d3d3;
+      margin-right: 1em; 
+      margin-left: 4em;
+      font-size: 13px;
+  }
+  nav div:hover{
+      cursor: pointer;
+      color: white;
+      transition: .3s;
+  } 

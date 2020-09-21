@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import store from './redux/store'
+import {Provider } from 'react-redux'
+import {Route, BrowserRouter,Switch,Redirect} from 'react-router-dom'
+import Searchresult from './search_result'
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+  {/* <React.StrictMode> */}
+    <BrowserRouter>
+    <Switch>
+      <Route exact path='/search' component={App} />
+      <Route exact path='/result' component={Searchresult} />
+      <Redirect to='/search' />
+    </Switch>
+    </BrowserRouter>
+  {/* </React.StrictMode> */}
+  </Provider>,
   document.getElementById('root')
 );
 
