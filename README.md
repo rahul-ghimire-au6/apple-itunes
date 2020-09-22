@@ -1,5 +1,5 @@
 
-This Website is Hosted on https://apple-itunes-159.netlify.app/search
+This Website is Hosted on https://apple-itunes-159.netlify.app
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
