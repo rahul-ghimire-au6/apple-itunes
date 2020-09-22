@@ -3,10 +3,6 @@ import { takeLatest,put,delay,} from 'redux-saga/effects'
 import { create } from 'apisauce'
 const api = create({
     baseURL: 'https://itunes.apple.com',
-    headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET"
-      }
   })
 
 function* saga_fetch_artist(action){
@@ -15,7 +11,11 @@ function* saga_fetch_artist(action){
     let artist_data=undefined
     yield api.get(`/search?term=${action.value}`).then((res)=>{
         artist_data=res.data
-    })
+    }).catch((err)=>{console.log(err)})
+    if(artist_data===null){
+        console.log('failed to fetch data please try different name')
+        alert('failed to fetch data please try different name')
+    }else
     yield put({type:action_types.fetch_artist_async,payload: artist_data})   
     } catch (err) {
         yield console.log(err)

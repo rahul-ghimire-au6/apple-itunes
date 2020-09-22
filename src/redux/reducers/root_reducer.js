@@ -42,7 +42,7 @@ export const fetch_artist_data = (state = initialState, action) => {
     artist_data: (state.artist_data = action.payload.results),
     temp: state.strings.formatString(state.strings.search_result_for_artist, {
       artist_name:
-        state.artist_data.length !== 0 ? state.artist_data[0].artistName : "",
+        state.artist_data.length !== 0 ? state.artist_data[0].artistName : [],
     }),
   };
 };

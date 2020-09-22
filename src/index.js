@@ -12,9 +12,9 @@ ReactDOM.render(
   {/* <React.StrictMode> */}
     <BrowserRouter>
     <Switch>
-      <Route exact path='/search' component={App} />
+      <Route exact path='/' component={App} />
       <Route exact path='/result' component={Searchresult} />
-      <Redirect to='/search' />
+      <Redirect to='/' />
     </Switch>
     </BrowserRouter>
   {/* </React.StrictMode> */}

@@ -84,7 +84,7 @@ class App extends Component {
         {this.props.artist_data.length !== 0 ? (
           <Redirect to="/result" />
         ) : (        
-          <Redirect to="/search" />         
+          <Redirect to="/" />         
         )}
       </Fragment>
     );
