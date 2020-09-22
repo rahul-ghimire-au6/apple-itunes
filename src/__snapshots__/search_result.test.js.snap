@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches app snapshot 1`] = `
+Array [
+  <div
+    className="sc-gtssRu gfLRqM"
+    data-testid="nav"
+  >
+    <div
+      className="sc-bdnylx bQSunl"
+    >
+      <nav>
+        <div>
+          <i
+            aria-hidden="true"
+            className="fa fa-apple"
+            id="logo"
+          />
+        </div>
+        <div>
+          Mac
+        </div>
+        <div>
+          iPad
+        </div>
+        <div>
+          iPhone
+        </div>
+        <div>
+          Watch
+        </div>
+        <div>
+          TV
+        </div>
+        <div>
+          Music
+        </div>
+        <div>
+          Support
+        </div>
+        <div>
+          Where to Buy
+        </div>
+        <div>
+          <i
+            aria-hidden="true"
+            className="fa fa-search"
+          />
+        </div>
+      </nav>
+    </div>
+  </div>,
+  <center>
+    <h1
+      className="sc-dlnjPT gREnMS"
+    >
+      
+    </h1>
+    <a
+      className="sc-hKFyIo jJjecs"
+      onClick={[Function]}
+    >
+      click to search again...
+    </a>
+  </center>,
+  <center>
+    <div
+      className="sc-eCApGN fkszar"
+    >
+      <div
+        className="sc-jSFkmK gPTwUW"
+      />
+    </div>
+  </center>,
+]
+`;

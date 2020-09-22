@@ -54,12 +54,6 @@ class Searchresult extends Component {
     };
   }
 
-  componentDidMount() {
-    if (this.props.artist_data.length === 0) {
-      this.props.history.push("/search");
-    }
-  }
-
   handlesearch = (e) => {
     e.preventDefault();
     this.props.empty_artist_data();

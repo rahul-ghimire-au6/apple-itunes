@@ -1,4 +1,4 @@
-import * as action_types from '../actions/action_types'
+import action_types from '../actions/action_types'
 import { takeLatest,put,delay,} from 'redux-saga/effects'
 import { create } from 'apisauce'
 const api = create({
@@ -12,7 +12,7 @@ function* saga_fetch_artist(action){
     yield api.get(`/search?term=${action.value}`).then((res)=>{
         artist_data=res.data
     })
-    yield put({type:action_types.fetch_artist,payload: artist_data})   
+    yield put({type:action_types.fetch_artist_async,payload: artist_data})   
     } catch (err) {
         yield console.log(err)
     }
@@ -20,7 +20,7 @@ function* saga_fetch_artist(action){
 
 function* saga_empty_artist_data(){
     try {
-        yield put({type:action_types.empty_artist_data})        
+        yield put({type:action_types.empty_artist_data_async})        
     } catch (err) {
         yield console.log(err)
     }

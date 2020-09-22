@@ -20,7 +20,7 @@ const Option159 = styled.div`
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = {
       language: "en",
     };
@@ -83,8 +83,8 @@ class App extends Component {
         </center>
         {this.props.artist_data.length !== 0 ? (
           <Redirect to="/result" />
-        ) : (
-          <Redirect to="search" />
+        ) : (        
+          <Redirect to="/search" />         
         )}
       </Fragment>
     );
