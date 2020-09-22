@@ -3,6 +3,10 @@ import { takeLatest,put,delay,} from 'redux-saga/effects'
 import { create } from 'apisauce'
 const api = create({
     baseURL: 'https://itunes.apple.com',
+    headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET"
+      }
   })
 
 function* saga_fetch_artist(action){
